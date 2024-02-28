@@ -5,6 +5,8 @@ import {
   startOfMonth,
   endOfMonth,
   addMonths,
+   startOfYear,
+  endOfYear,
   startOfWeek,
   endOfWeek,
   isSameDay,
@@ -24,6 +26,8 @@ const defineds = {
   endOfMonth: endOfMonth(new Date()),
   startOfLastMonth: startOfMonth(addMonths(new Date(), -1)),
   endOfLastMonth: endOfMonth(addMonths(new Date(), -1)),
+  startOfYear:startOfYear(new Date()),
+  endOfYear:endOfYear(new Date()),
 };
 
 const staticRangeHandler = {
@@ -83,6 +87,13 @@ export const defaultStaticRanges = createStaticRanges([
     range: () => ({
       startDate: defineds.startOfLastMonth,
       endDate: defineds.endOfLastMonth,
+    }),
+  },
+   {
+    label: 'This Year',
+    range: () => ({
+      startOfYear: defineds.startOfYear,
+      endOfYear: defineds.endOfYear,
     }),
   },
 ]);
