@@ -31,7 +31,7 @@ This project is currently unmaintained because the original maintainers are busy
 ### Installation
 
 ```
-npm install --save react-date-range
+npm install --save @mohamedanis/react-date-range
 ```
 This plugin expects `react` and `date-fns` as peerDependencies, It means that you need to install them in your project folder.
 
@@ -44,13 +44,13 @@ npm install --save react date-fns
 You need to import skeleton and theme styles first.
 
 ```javascript
-import 'react-date-range/dist/styles.css'; // main style file
-import 'react-date-range/dist/theme/default.css'; // theme css file
+import '@mohamedanis/react-date-range/dist/styles.css'; // main style file
+import '@mohamedanis/react-date-range/dist/theme/default.css'; // theme css file
 ```
 
 ### `DatePicker`
 ```javascript
-import { Calendar } from 'react-date-range';
+import { Calendar } from '@mohamedanis/react-date-range';
 
 class MyComponent extends Component {
   handleSelect(date){
@@ -70,7 +70,7 @@ class MyComponent extends Component {
 
 ### `DateRangePicker / DateRange`
 ```javascript
-import { DateRangePicker } from 'react-date-range';
+import { DateRangePicker } from '@mohamedanis/react-date-range';
 
 class MyComponent extends Component {
   handleSelect(ranges){
