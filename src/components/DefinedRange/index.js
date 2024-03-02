@@ -7,6 +7,7 @@ import InputRangeField from '../InputRangeField';
 import cx from 'classnames';
 
 class DefinedRange extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +15,7 @@ class DefinedRange extends Component {
       focusedInput: -1,
     };
   }
-
+ 
   handleRangeChange = range => {
     const { onChange, ranges, focusedRange } = this.props;
     const selectedRange = ranges[focusedRange[0]];
@@ -43,7 +44,7 @@ class DefinedRange extends Component {
     const selectedRange = ranges[focusedRangeIndex];
     return { selectedRange, focusedRangeIndex };
   }
-
+  
   render() {
     const {
       headerContent,
@@ -56,7 +57,7 @@ class DefinedRange extends Component {
       rangeColors,
       className,
     } = this.props;
-
+   
     return (
       <div className={cx(styles.definedRangesWrapper, className)}>
         {headerContent}
