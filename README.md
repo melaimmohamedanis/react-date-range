@@ -6,6 +6,8 @@
 
  ⚠️ In this package I add "This Year" and "Last Year" for who need this Ragnes  ⚠️
 
+![alt text](https://github.com/melaimmohamedanis/react-date-range/blob/master/demo/dd.png?raw=true)
+
 A date library agnostic React component for choosing dates and date ranges. Uses [date-fns](http://date-fns.org/) for date operations.
 
 # Notice ⚠️
